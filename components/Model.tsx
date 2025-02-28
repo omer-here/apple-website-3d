@@ -3,7 +3,7 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap";
 import ModelView from "./ModelView";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useLayoutEffect } from "react";
 import { yellowImg } from "../utils";
 
 import * as THREE from 'three';
@@ -19,6 +19,20 @@ const Model = () => {
     color: ['#8F8A81', '#FFE7B9', '#6F6C64'],
     img: "/assets/images/yellow.jpg",
   })
+
+  // const eventSourceRef = useRef<HTMLElement | null>(null);
+  // const [isClient, setIsClient] = useState(false);
+
+  // useEffect(() => {
+  //   setIsClient(true); // This ensures the code below runs only on the client
+  // }, []);
+
+  // useEffect(() => {
+  //   if (isClient && typeof document !== 'undefined') {
+  //     eventSourceRef.current = document.getElementById('root') as HTMLElement;
+  //   }
+  // }, [isClient]);
+
 
   // camera control for the model view
   const cameraControlSmall = useRef(null);
