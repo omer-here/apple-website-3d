@@ -13,7 +13,12 @@ import Footer from "@/components/Footer";
 
 const Model = dynamic(() => import('../components/Model'), {
   ssr: false, // Disable SSR
-  loading: () => <div>Loading...</div>, // Fallback while loading
+  loading: () =>       
+  <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+    <div className="w-[10vw] h-[10vw] rounded-full">
+      Loading...
+    </div>
+  </div>, // Fallback while loading
 });
 
 export default function Home() {
