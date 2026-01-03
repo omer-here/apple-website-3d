@@ -15,7 +15,7 @@
   <h3 align="center">Iphone 15 Website</h3>
 
    <div align="center">
-     I build this project step by step with a detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
+     I build this project following a tutorial but by challenging myself using Next Js & Typescript on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
     </div>
 </div>
 
